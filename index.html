@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Haven - Domestic Violence Support</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector" style="position: absolute; top: 20px; right: 20px;">
+        <select id="languageSelect" class="form-control" onchange="changeLanguage()" style="width: 150px;">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="te">తెలుగు</option>
+        </select>
+    </div>
+
+    <!-- Home Section -->
+    <section id="section1" class="section background-container d-flex flex-column justify-content-center text-center">
+        <div class="container homepage-info">
+            <h1 id="homepage-head">We are here for you... <span id="believe-text">Believe in Us</span></h1>
+            <p id="homepage-para">You came here helpless, but you'll leave with a new life.</p>
+            <a href="#section2"> <button class="btn btn-primary homepage-btn" onclick="displaySection('section2')" id="homepage-btn">Dive In</button></a>
+        </div>
+    </section>
+
+    <!-- About & Services Section -->
+    <section id="section2" class="section d-none text-center">
+        <div class="d-flex flex-column justify-content-center">
+        <div class="d-flex flex-row">
+            <div class="container main-page">
+                <img src="https://media.istockphoto.com/id/1352337061/vector/stop-violence-against-women-womens-rights-stop-female-abuse-poster-banner-and-background.jpg?s=612x612&w=0&k=20&c=Rn8FscwXXEQyOHoEuxUecS1iMo_FIWNQg_CdR702xLI=" class="home-page-img" alt="Support Image"/>
+                <p id="resources-info"><b>Resources and Information</b></p>
+                <button class="btn btn-primary" onclick="displaySection('section7')" id="resources-next-btn"  data-en="Next" 
+                data-hi="अगला" 
+                data-te="తరువాత">Next</button>
+            </div>
+            
+            <div class="container main-page">
+                <img src="https://img.freepik.com/premium-vector/sleek-professional-logo-design-law-firm-featuring-clean-lines-minimalist-aesthetic-design-clean-minimalist-logo-ngo-promoting-social-justice_538213-48381.jpg" class="home-page-img" alt="Support Image"/>
+                <p id="contact-info"><b>Contact Lawyers and NGOs</b></p>
+                <button class="btn btn-primary" onclick="displaySection('section6')" id="contact-next-btn"  data-en="Next" 
+                data-hi="अगला" 
+                data-te="తరువాత">Next</button>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="container main-page">
+                <img src="https://img.freepik.com/free-vector/male-female-hands-holding-equality-gender-symbols-man-woman-with-feminine-masculine-signs-flat-vector-illustration-balance-parity-concept-banner-website-design-landing-web-page_74855-24908.jpg" class="home-page-img" alt="Support Image"/>
+                <h2 id="solutions-head"><b>Get the Solutions</b></h2>
+                <button class="btn btn-primary" onclick="displaySection('section3')" id="solutions-next-btn"  data-en="Next" 
+                data-hi="अगला" 
+                data-te="తరువాత">Next</button>
+            </div>
+        </div>
+       <a href="#section1"><button class="btn btn-outline-primary" onclick="displaySection('section2')" id="back-btn" data-en="Back"
+        data-hi="पीछे"
+        data-te="తిరిగి">Back</button></a>
+        </div>
+    </section>
+
+    <!-- Self-Assessment Section -->
+    <section id="section3" class="section d-none text-center">
+        <div class="container main-page">
+          <div class="container main-page">
+            <img src="https://thumbs.dreamstime.com/z/chatbot-customer-service-abstract-concept-vector-illustration-bot-ai-retail-e-commerce-self-experience-online-client-support-206062508.jpg" class="home-page-img" alt="Support Image"/>
+            <p id="chatbot-text"><strong>Chat with ChatBot</strong></p>
+            <button class="btn btn-primary" onclick="displaySection('section3')" id="next-chat-btn"  data-en="Next" 
+            data-hi="अगला" 
+            data-te="తరువాత">Next</button>
+        </div>
+        <div class="container main-page">
+            <img src="https://img.freepik.com/premium-vector/survivorship-care-vector-illustration_1237743-59489.jpg" class="home-page-img" alt="Support Image"/>
+            <p id="database-solutions"><strong>Database solutions</strong></p>
+            <button class="btn btn-primary" onclick="displaySection('section9')" id="next-db-btn"  data-en="Next" 
+            data-hi="अगला" 
+            data-te="తరువాత">Next</button>
+        </div>
+            <h1 id="solutions-header"  data-en="Solutions" 
+            data-hi="समाधान" 
+            data-te="పరిష్కారాలు">Solutions</h1>
+            <button class="btn btn-outline-primary" onclick="displaySection('section2')"data-en="Back"
+            data-hi="पीछे"
+            data-te="తిరిగి">Back</button>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="section4" class="section d-none text-center">
+        <div class="container main-page">
+            <h1 id="resources-title">Resources & Information</h1>
+            <button class="btn btn-outline-primary" onclick="displaySection('section3')" data-en="Back" data-hi="पीछे" data-te="తిరిగి">Back</button>
+            <button class="btn btn-primary" onclick="displaySection('')"  data-en="Next" 
+            data-hi="अगला" 
+            data-te="తరువాత">Next</button>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+   
+
+    <!-- Contact Section -->
+    <section id="section6" class="section d-none text-center">
+        <div class="container main-page">
+            <h1 id="contact-title">Contact Lawyers & NGOs</h1>
+            <p id="contact-description">We have partnered with trusted legal professionals and organizations to provide the support you need.</p>
+            
+            <div class="contact-card">
+                <h3 id="legal-aid-title">Legal Aid Foundation</h3>
+                <p id="legal-aid-desc">Specialized in domestic violence cases.</p>
+                <p><strong id="email-label" data-en="Email:" 
+                    data-hi="ईमेल:" 
+                    data-te="ఇమెయిల్:">Email:</strong> support@legalaidfoundation.org</p>
+                <p><strong id="phone-label"  data-en="Phone:" 
+                    data-hi="फोन:" 
+                    data-te="ఫోన్:">Phone:</strong> (555) 123-4567</p>
+                <button class="btn btn-info" onclick="contactSupport('Legal Aid Foundation')" id="legal-aid-contact-btn"  data-en="Contact"
+                data-hi="संपर्क करें"
+                data-te="సంప్రదించండి">Contact</button>
+            </div>
+            
+            <div class="contact-card">
+                <h3 id="womens-shelter-title">Women’s Shelter Organization</h3>
+                <p id="womens-shelter-desc">Provides safe spaces and emergency housing.</p>
+                <p><strong data-en="Email:" 
+                    data-hi="ईमेल:" 
+                    data-te="ఇమెయిల్:">Email:</strong> info@womensshelter.org</p>
+                <p><strong  data-en="Phone:" 
+                    data-hi="फोन:" 
+                    data-te="ఫోన్:">Phone:</strong> (555) 234-5678</p>
+                <button class="btn btn-info" onclick="contactSupport('Women’s Shelter Organization')" id="womens-shelter-contact-btn"  data-en="Contact"
+                data-hi="संपर्क करें"
+                data-te="సంప్రదించండి">Contact</button>
+            </div>
+            
+            <div class="contact-card">
+                <h3 id="safe-hands-title">SafeHands Law Firm</h3>
+                <p id="safe-hands-desc">Experienced lawyers in family law and domestic abuse cases.</p>
+                <p><strong data-en="Email:" 
+                    data-hi="ईमेल:" 
+                    data-te="ఇమెయిల్:">Email:</strong> contact@safehandslaw.com</p>
+                <p><strong  data-en="Phone:" 
+                    data-hi="फोन:" 
+                    data-te="ఫోన్:">Phone:</strong> (555) 345-6789</p>
+                <button class="btn btn-info" onclick="contactSupport('SafeHands Law Firm')" id="safe-hands-contact-btn"  data-en="Contact"
+                data-hi="संपर्क करें"
+                data-te="సంప్రదించండి">Contact</button>
+            </div>
+            
+            <button class="btn btn-outline-primary mt-4" onclick="displaySection('section2')" id="contact-back-btn" data-en="Back" data-hi="पीछे" data-te="తిరిగి">Back</button>
+        </div>
+    </section>
+
+    <!-- Resources & Information -->
+    <section id="section7" class="section d-none text-center">
+        <div class="container main-page">
+            <h1 id="resources-info-title">Resources & Information</h1>
+            <p id="resources-description">Access important information and resources to help you navigate through difficult times.</p>
+            
+            <div class="resource-card">
+                <h3 id="understanding-title">Understanding Domestic Violence</h3>
+                <p id="understanding-desc">Learn about the different forms of abuse, signs to look out for, and how to protect yourself.</p>
+                <button class="btn btn-info" onclick="openResource('Understanding Domestic Violence')" data-en="Learn More"
+                data-hi="और जानें"
+                data-te="ఇంకా తెలుసుకోండి">Learn More</button>
+            </div>
+
+            <div class="resource-card">
+                <h3 id="legal-rights-title">Know Your Legal Rights</h3>
+                <p id="legal-rights-desc">Understand the laws surrounding domestic violence and your rights in such situations.</p>
+                <button class="btn btn-info" onclick="openResource('Legal Rights')" data-en="Learn More"
+                data-hi="और जानें"
+                data-te="ఇంకా తెలుసుకోండి">Learn More</button>
+            </div>
+
+            <div class="resource-card">
+                <h3 id="safety-planning-title">Create a Safety Plan</h3>
+                <p id="safety-planning-desc">A step-by-step guide to help you plan for your safety in case of an emergency.</p>
+                <button class="btn btn-info" onclick="openResource('Safety Planning')" data-en="Learn More"
+                data-hi="और जानें"
+                data-te="ఇంకా తెలుసుకోండి">Learn More</button>
+            </div>
+
+            <button class="btn btn-outline-primary mt-4" onclick="displaySection('section2')" id="resources-back-btn" data-en="Back" data-hi="पीछे" data-te="తిరిగి">Back</button>
+        </div>
+    </section>
+
+    <section id="section9" class="section d-none">
+        <div class="containerForm">
+            <p id="form-description"  data-en="Your question and get an immediate response."
+                data-hi="अपना सवाल पूछें और तुरंत जवाब पाएं।"
+                data-te="మీ ప్రశ్న అడగండి మరియు వెంటనే సమాధానం పొందండి।">Your question and get an immediate response.
+            </p>
+            
+            <!-- Form to ask a question -->
+            <form action="/get_response" method="POST" id="questionForm">
+                <label for="user_question" id="form-label" class="labelForm"
+                    data-en="Enter your question:"
+                    data-hi="अपना सवाल दर्ज करें:"
+                    data-te="మీ ప్రశ్నను నమోదు చేయండి:">
+                    <strong>Enter your question:</strong>
+                </label>
+                <textarea id="questionInput" rows="5" cols="30" placeholder="Describe your problem here..." data-en="Describe your problem here..." data-hi="अपनी समस्या यहां लिखें..." data-te="మీ సమస్యను ఇక్కడ వివరించండి..."></textarea>
+                <button type="submit" class="buttonForm" id="form-submit-btn"
+                    data-en="Ask" 
+                    data-hi="पूछें" 
+                    data-te="అడగండి">
+                    Ask
+                </button>
+                
+            </form>
+            <div id="responseContainer" style="display: none;">
+                <p id="response">{{ answer }}</p>
+            </div>        
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
